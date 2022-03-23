@@ -1,7 +1,7 @@
 FROM node:10-alpine
 
 LABEL name="Node Express Application" \   
-     maintainer="Ali Kahoot <kahoot.ali@outlook.com>" \
+     maintainer="Ali Kahoot <msufyan74@yahoo.com>" \
      summary="A Node Express application"
 
 # Create app directory
@@ -15,6 +15,6 @@ RUN npm install
 
 RUN apk add curl 
 
-COPY server.js ./
+COPY server*.js ./
 
 CMD [ "npm", "start" ]
